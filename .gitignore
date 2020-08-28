@@ -1,0 +1,4 @@
+./mask.log
+node_modules
+.eslintrc
+package-lock.json

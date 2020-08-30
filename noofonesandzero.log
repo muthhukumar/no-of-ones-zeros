@@ -127,3 +127,13 @@
   count: { numberOfOnes: 0, numberOfZeros: 0 },
   binaryValue: [ 0, 1, 0, 1 ]
 }
+[2020-08-28T17:56:30.933] [INFO] default - { numberOfOnes: 2, numberOfZeros: 2 }
+[2020-08-28T17:58:34.072] [INFO] default - { numberOfOnes: 2, numberOfZeros: 2 }
+[2020-08-28T18:13:28.972] [INFO] default - { numberOfOnes: 1, numberOfZeros: 1 }
+[2020-08-29T10:42:11.013] [INFO] default - { numberOfOnes: 0, numberOfZeros: 0 }
+[2020-08-30T23:20:38.487] [INFO] default - 0
+[2020-08-30T23:23:20.809] [INFO] default - { numberOfOnes: 0, numberOfZeros: 1 }
+[2020-08-30T23:24:57.257] [INFO] default - { numberOfOnes: 1, numberOfZeros: 1 }
+[2020-08-30T23:26:38.166] [INFO] default - { count: { numberOfOnes: 1, numberOfZeros: 1 }, binaryValue: '0' }
+[2020-08-30T23:35:22.809] [INFO] default - { count: { numberOfOnes: 1, numberOfZeros: 1 }, binaryValue: '10' }
+[2020-08-30T23:35:49.125] [INFO] default - { count: { numberOfOnes: 0, numberOfZeros: 1 }, binaryValue: 0 }

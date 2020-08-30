@@ -1,42 +1,42 @@
-const log4js = require("log4js");
+const log4js = require('log4js');
 
 log4js.configure({
-  appenders: {
-    logstash: {
-      type: "@log4js-node/logstash-http",
-      url: "",
-      application: "mask.log",
-      logType: "application",
-    },
+    appenders: {
+        logstash: {
+            type: '@log4js-node/logstash-http',
+            url: '',
+            application: 'noofonesandzero.log',
+            logType: 'application',
+        },
 
-    /**
-     * Console Appender
-     */
-    console: {
-      type: "stdout",
-      layout: {
-        type: "pattern",
-        pattern: "%d{yyyy-MM-dd hh:mm:ss.SSS} %p %c %m",
-      },
-    },
+        /**
+         * Console Appender
+         */
+        console: {
+            type: 'stdout',
+            layout: {
+                type: 'pattern',
+                pattern: '%d{yyyy-MM-dd hh:mm:ss.SSS} %p %c %m',
+            },
+        },
 
-    /**
-     * File Appender
-     */
-    file: {
-      type: "file",
-      filename: `mask.log`,
-      maxLogSize: 10485760,
-      compress: true,
+        /**
+         * File Appender
+         */
+        file: {
+            type: 'file',
+            filename: `noofonesandzero.log`,
+            maxLogSize: 10485760,
+            compress: true,
+        },
     },
-  },
-  categories: {
-    default: { appenders: ["file", "logstash"], level: "info" },
-    error: { appenders: ["file", "logstash"], level: "error" },
-    debug: { appenders: ["file", "logstash"], level: "debug" },
-    warn: { appenders: ["file", "logstash"], level: "warn" },
-    console: { appenders: ["console"], level: "info" },
-  },
+    categories: {
+        default: { appenders: ['file', 'logstash'], level: 'info' },
+        error: { appenders: ['file', 'logstash'], level: 'error' },
+        debug: { appenders: ['file', 'logstash'], level: 'debug' },
+        warn: { appenders: ['file', 'logstash'], level: 'warn' },
+        console: { appenders: ['console'], level: 'info' },
+    },
 });
 
 /**
@@ -49,7 +49,7 @@ const logger = log4js.getLogger();
  * Console Logger
  */
 
-const consoleLogger = log4js.getLogger("console");
+const consoleLogger = log4js.getLogger('console');
 
 module.exports = { logger, consoleLogger };
 
